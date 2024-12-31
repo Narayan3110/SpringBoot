@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.library</groupId>
-	<artifactId>library-management</artifactId>
+	<artifactId>librarymanagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>library-management</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Library-Management</name>
+	<description>student Management using JDBC</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -38,8 +38,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
-		
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -52,19 +50,18 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+				<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
+	<dependency>
+	    <groupId>org.apache.tomcat.embed</groupId>
+	    <artifactId>tomcat-embed-jasper</artifactId>   
+	</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
-<dependency>
-    <groupId>org.apache.tomcat.embed</groupId>
-    <artifactId>tomcat-embed-jasper</artifactId>
-    
-</dependency>
-
 	</dependencies>
 
 	<build>
