@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>User Home Page</title>
+<link rel="stylesheet" th:href="@{/css/styles.css}">
+    <style>
+        body {
+            background: url('/images/user-mngmnt.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .welcome-card {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 100px auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .welcome-card h2 {
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        .welcome-card a {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .welcome-card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+	<div class="welcome-card">
+        <h2>Welcome, <span th:text="${user.name}"></span>!</h2>
+        <a href="logout">Logout</a>
+    </div>
+	
+</body>
+</html>
