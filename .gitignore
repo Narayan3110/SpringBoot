@@ -1,0 +1,31 @@
+# Compiled class files
+*.class
+
+# Spring Boot packaging
+target/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# IDE-specific files
+/.idea/
+/.project
+/.classpath
+
+# Environment-specific properties
+application.properties
+application.yml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Maven / Gradle files
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+.gradle/
+/build/
